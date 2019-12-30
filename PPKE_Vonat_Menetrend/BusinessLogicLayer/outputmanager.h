@@ -9,7 +9,7 @@
 //C++ type inclusions
 
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -28,7 +28,7 @@ public:
 
     //Instance method declarations
 
-    vector<vector<QString>> ScheduleToString(Schedule schedule);
+    vector<vector<string>> ScheduleToString(Schedule schedule);
 
 private:
 

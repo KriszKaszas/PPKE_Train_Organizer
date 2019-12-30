@@ -12,7 +12,7 @@
 //C++ type inclusions
 
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -27,8 +27,8 @@ public:
 
     //Instance method declarations
 
-    bool GetStartingData(vector<QString> Filepaths);
-    bool SaveScheduleInFile(QString outputFilepath, QString FileName, vector<vector<QString>> ProcessedData);
+    bool GetStartingData(vector<string> Filepaths);
+    bool SaveScheduleInFile(string outputFilepath, string FileName, vector<vector<string>> ProcessedData);
     vector<Train> GetTrains();
     vector<Coach> GetCoaches();
     vector<Product> GetProducts();

@@ -3,8 +3,9 @@
 
 //C++ type inclusions
 
+#include <iostream>
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -23,13 +24,14 @@ public:
 
     //Instance method declarations
 
-    bool DisplayOutput(QString message);
-    bool DisplayOutput(vector<vector<QString>> ProcessedData);
+    bool DisplayOutput(string message);
+    bool DisplayOutput(vector<vector<string>> ProcessedData);
 
 
 private:
 
     //Instance field declarations
+
 
 
     //Instance method declarations

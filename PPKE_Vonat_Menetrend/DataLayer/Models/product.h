@@ -4,7 +4,7 @@
 //C++ type inclusions
 
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -22,25 +22,25 @@ public:
 
     //Instance method declarations
 
-    QString GetName();
-    QString GetOriginStation();
-    QString GetDestinationStation();
+    string GetName();
+    string GetOriginStation();
+    string GetDestinationStation();
     int GetQuantity();
 
 private:
 
     //Instance field declarations
 
-    QString name;
-    QString originStation;
-    QString destinationStation;
+    string name;
+    string originStation;
+    string destinationStation;
     int quantity;
 
     //Instance method declarations
 
-    bool SetName(QString name);
-    bool SetOriginStation(QString originStation);
-    bool SetDestinationStation(QString destinationStation);
+    bool SetName(string name);
+    bool SetOriginStation(string originStation);
+    bool SetDestinationStation(string destinationStation);
     bool SetQuantity(int quantity);
 };
 

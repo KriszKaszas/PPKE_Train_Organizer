@@ -9,7 +9,7 @@
 //C++ type inclusions
 
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -29,7 +29,7 @@ public:
     //Instance method declarations
 
     Schedule GetSchedule();
-    bool Organize(vector<QString> trains, vector<QString> coaches, vector<QString> products);
+    bool Organize(vector<string> trains, vector<string> coaches, vector<string> products);
 
 private:
 
