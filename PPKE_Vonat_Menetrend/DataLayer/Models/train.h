@@ -4,7 +4,7 @@
 //C++ type inclusions
 
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -22,23 +22,23 @@ public:
 
     //Instance method declarations
 
-    QString GetId();
+    string GetId();
     int GetCoachCapacity();
-    vector<QString> GetTrainSchedule();
+    vector<string> GetTrainSchedule();
 
 private:
 
     //Instance field declarations
 
-    QString id;
+    string id;
     int coachCapacity;
-    vector<QString> trainSchedule;
+    vector<string> trainSchedule;
 
     //Instance method declarations
 
-    bool SetId(QString id);
+    bool SetId(string id);
     bool SetCoachCapacity(int coachCapacity);
-    bool SetTrainSchedule(vector<QString> trainSchedule);
+    bool SetTrainSchedule(vector<string> trainSchedule);
 
 };
 

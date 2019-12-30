@@ -3,8 +3,9 @@
 
 //C++ type inclusions
 
+#include <iostream>
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -23,8 +24,8 @@ public:
 
     //Instance method declarations
 
-    bool DisplayRequestPrompt(QString requestPrompt);
-    QString GetUserInput();
+    bool DisplayRequestPrompt(string requestPrompt);
+    string GetUserInput();
 
 private:
 

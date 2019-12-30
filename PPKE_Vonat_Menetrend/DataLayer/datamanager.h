@@ -11,7 +11,7 @@
 //C++ type inclusions
 
 #include <vector>
-#include <QString>
+#include <string>
 
 using namespace std;
 
@@ -26,8 +26,8 @@ public:
 
     //Instance method declarations
 
-    vector<vector<QString>> ReadFromFile(QString filepath);
-    bool WriteToFile(QString outputFilepath, QString FileName, vector<vector<QString>> ProcessedData);
+    vector<vector<string>> ReadFromFile(string filepath);
+    bool WriteToFile(string outputFilepath, string FileName, vector<vector<string>> ProcessedData);
 };
 
 #endif // DATAMANAGER_H

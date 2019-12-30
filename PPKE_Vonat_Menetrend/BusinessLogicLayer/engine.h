@@ -14,7 +14,7 @@
 //C++ type inclusions
 
 #include <vector>
-#include <QString>
+#include <string>
 
 class Engine
 {
@@ -35,12 +35,12 @@ private:
 
     //Instance method declarations
 
-    bool DisplayData(QString message);
-    bool DisplayData(vector<vector<QString>> ProcessedData);
-    QString GetUserInput(QString request);
-    bool InitializeStartingData(vector<QString> Filepaths);
+    bool DisplayData(string message);
+    bool DisplayData(vector<vector<string>> ProcessedData);
+    string GetUserInput(string request);
+    bool InitializeStartingData(vector<string> Filepaths);
     bool BuildSchedule(vector<Train> trains, vector<Coach> coaches, vector<Product> products);
-    bool SaveScheduleToFile(QString outputFilepath, QString FileName, vector<vector<QString>> ProcessedData);
+    bool SaveScheduleToFile(string outputFilepath, string FileName, vector<vector<string>> ProcessedData);
     bool Init();
 
 };
