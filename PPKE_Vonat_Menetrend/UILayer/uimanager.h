@@ -37,8 +37,8 @@ private:
 
     //Instance field declarations
 
-    DisplayManager displayManager;
-    InputManager inputManager;
+    DisplayManager* displayManager;
+    InputManager* inputManager;
 
     //Instance method declarations
 

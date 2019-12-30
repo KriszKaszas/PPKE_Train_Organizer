@@ -35,12 +35,11 @@ private:
 
     //Instance field declarations
 
-    Schedule schedule;
-    Optimizer optimizer;
+    Schedule* schedule;
+    Optimizer* optimizer;
 
     //Instance method declarations
 
-   bool SetSchedule();
 };
 
 #endif // ORGANIZER_H

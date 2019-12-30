@@ -40,7 +40,7 @@ private:
     vector<Train> trains;
     vector<Coach> coaches;
     vector<Product> products;
-    DataManager dataManager;
+    DataManager* dataManager;
 
     //Instance method declarations
 };

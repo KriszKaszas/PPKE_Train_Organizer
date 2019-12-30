@@ -29,9 +29,9 @@ private:
 
     //Instance field declarations
 
-    Connection connection;
-    UIManager ui;
-    OutputManager output;
+    Connection* connection;
+    UIManager* ui;
+    OutputManager* output;
 
     //Instance method declarations
 
@@ -39,7 +39,7 @@ private:
     bool DisplayData(vector<vector<QString>> ProcessedData);
     QString GetUserInput(QString request);
     bool InitializeStartingData(vector<QString> Filepaths);
-    bool BuildSchedule();
+    bool BuildSchedule(vector<Train> trains, vector<Coach> coaches, vector<Product> products);
     bool SaveScheduleToFile(QString outputFilepath, QString FileName, vector<vector<QString>> ProcessedData);
 
 };
