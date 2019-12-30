@@ -41,6 +41,7 @@ private:
     bool InitializeStartingData(vector<QString> Filepaths);
     bool BuildSchedule(vector<Train> trains, vector<Coach> coaches, vector<Product> products);
     bool SaveScheduleToFile(QString outputFilepath, QString FileName, vector<vector<QString>> ProcessedData);
+    bool Init();
 
 };
 
