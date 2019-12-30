@@ -25,6 +25,9 @@ public:
     Engine();
     ~Engine();
 
+    //Instance method declarations
+    bool Init();
+
 private:
 
     //Instance field declarations
@@ -41,7 +44,6 @@ private:
     bool InitializeStartingData(vector<string> Filepaths);
     bool BuildSchedule(vector<Train> trains, vector<Coach> coaches, vector<Product> products);
     bool SaveScheduleToFile(string outputFilepath, string FileName, vector<vector<string>> ProcessedData);
-    bool Init();
 
 };
 
