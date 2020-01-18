@@ -1,4 +1,4 @@
-#ifndef COACH_H
+ #ifndef COACH_H
 #define COACH_H
 
 //C++ type inclusions
@@ -14,7 +14,7 @@ public:
 
     //Constructor and destructor declarations
 
-    Coach();
+    Coach(string id, int capacity, string station);
     ~Coach();
 
     //Instance field declarations

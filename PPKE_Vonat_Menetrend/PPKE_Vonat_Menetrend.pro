@@ -19,9 +19,12 @@ SOURCES += \
         BusinessLogicLayer/optimizer.cpp \
         BusinessLogicLayer/organizer.cpp \
         BusinessLogicLayer/outputmanager.cpp \
+        BusinessLogicLayer/railwaysystembuilder.cpp \
         DataLayer/Models/coach.cpp \
         DataLayer/Models/product.cpp \
+        DataLayer/Models/railwaysystem.cpp \
         DataLayer/Models/schedule.cpp \
+        DataLayer/Models/station.cpp \
         DataLayer/Models/train.cpp \
         DataLayer/connection.cpp \
         DataLayer/datamanager.cpp \
@@ -40,9 +43,12 @@ HEADERS += \
     BusinessLogicLayer/optimizer.h \
     BusinessLogicLayer/organizer.h \
     BusinessLogicLayer/outputmanager.h \
+    BusinessLogicLayer/railwaysystembuilder.h \
     DataLayer/Models/coach.h \
     DataLayer/Models/product.h \
+    DataLayer/Models/railwaysystem.h \
     DataLayer/Models/schedule.h \
+    DataLayer/Models/station.h \
     DataLayer/Models/train.h \
     DataLayer/connection.h \
     DataLayer/datamanager.h \

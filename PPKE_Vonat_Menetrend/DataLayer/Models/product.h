@@ -14,7 +14,7 @@ public:
 
     //Constructor and destructor declarations
 
-    Product();
+    Product(string name, string originStation, string destinationStation, int quantity);
     ~Product();
     //Instance field declarations
 

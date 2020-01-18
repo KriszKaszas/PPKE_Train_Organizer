@@ -1,8 +1,15 @@
 #ifndef TRAIN_H
 #define TRAIN_H
 
+//Project defined type file inclusions
+
+#include "coach.h"
+#include "product.h"
+#include "schedule.h"
+
 //C++ type inclusions
 
+#include <map>
 #include <vector>
 #include <string>
 
@@ -14,7 +21,7 @@ public:
 
     //Constructor and destructor declarations
 
-    Train();
+    Train(string id, int coachCapacity, vector<string> trainSchedule);
     ~Train();
     //Instance field declarations
 
@@ -22,9 +29,12 @@ public:
 
     //Instance method declarations
 
+
     string GetId();
     int GetCoachCapacity();
-    vector<string> GetTrainSchedule();
+    bool SetNumberOfConnectedCoaches();
+    int GetNumberOfConnectedCoaches();
+    Schedule GetTrainSchedule();
 
 private:
 
@@ -32,13 +42,14 @@ private:
 
     string id;
     int coachCapacity;
-    vector<string> trainSchedule;
+    int numberOfConnectedCoaches;
+    Schedule* trainSchedule;
 
     //Instance method declarations
 
     bool SetId(string id);
     bool SetCoachCapacity(int coachCapacity);
-    bool SetTrainSchedule(vector<string> trainSchedule);
+    bool SetTrainSchedule(vector<map<string, int>> trainSchedule);
 
 };
 

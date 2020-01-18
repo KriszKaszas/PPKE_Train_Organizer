@@ -8,8 +8,14 @@
 #include "Models/product.h"
 #include "Models/schedule.h"
 
+//Qt type declarations
+
+#include <QFile>
+
+
 //C++ type inclusions
 
+#include <iostream>
 #include <vector>
 #include <string>
 
@@ -26,7 +32,9 @@ public:
 
     //Instance method declarations
 
-    vector<vector<string>> ReadFromFile(string filepath);
+    vector<Train> ReadTrainsFromFile(string filepath);
+    vector<Coach> ReadCoachesFromFile(string filepath);
+    vector<Product> ReadProductsFromFile(string filepath);
     bool WriteToFile(string outputFilepath, string FileName, vector<vector<string>> ProcessedData);
 };
 

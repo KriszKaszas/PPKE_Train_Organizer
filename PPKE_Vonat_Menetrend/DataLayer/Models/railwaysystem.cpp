@@ -1,6 +1,7 @@
 #include "railwaysystem.h"
 
-RailwaySystem::RailwaySystem()
+RailwaySystem::RailwaySystem(vector<Train> Trains)
 {
 
 }
+
